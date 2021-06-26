@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://use.fontawesome.com/c6b3111778.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js"></script>
+    <title>Hello Kakao Clone World!</title>
+</head>
+<body>
+    <div class="big-display">
+        <div class="item">This display is too big...😥</div>
+        <div class="item">please fix the window size less then 645px </div>
+    </div>
+    <div id="phone-frame">
+        <div class="status-bar">
+            <div class="status-bar__column" id="time"></div><!--추후 현재 시각 넣을 것-->
+            <div class="status-bar__column" id="space-mode"></div>
+            <i class="fa fa-signal" aria-hidden="true"></i>
+            <i class="fa fa-wifi" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+         </div>
+
+         <div class="login-main-container">
+            <header class="welcom-header_text">Welcome to Kokoa Talk</header>
+            <p style="color: #2E363E; opacity: 0.7;">If you have Account, Log in with your email or phone number.</p>
+        </div>
+
+        <form name="form" action="index.html" method="GET" id="login-form" onsubmit="return checkForm()">
+            <input name="username" type="text" placeholder="Email or phone number" id="username">
+            <input name="password" type="password" placeholder="Password" id="password">
+            <input type="submit" value="Login">
+            <a href="#">Forgot my password</a>
+        </form>
+    </div>
+</body>
+</html>
